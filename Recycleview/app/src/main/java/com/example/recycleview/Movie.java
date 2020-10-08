@@ -11,9 +11,11 @@ public class Movie {
     private String year;
 
     @SerializedName("Poster")
-    private int Poster;
+    private String Poster;
 
-    public Movie(String movieName, String year, int poster) {
+
+
+    public Movie(String movieName, String year, String poster) {
         this.Title = movieName;
         this.year = year;
         this.Poster = poster;
@@ -32,11 +34,11 @@ public class Movie {
         return year;
     }
 
-    public int getPoster() {
+    public String getPoster() {
         return Poster;
     }
 
-    public void setPoster(int poster) {
+    public void setPoster(String poster) {
         Poster = poster;
     }
 

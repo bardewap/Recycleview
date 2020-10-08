@@ -15,6 +15,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 
+import org.json.JSONObject;
+
 import java.util.List;
 
 public class UserAdapter extends RecyclerView.Adapter<UserAdapter.UserHolder> {
@@ -38,6 +40,7 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.UserHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull UserHolder holder, final int position) {
+
 
         holder.textView.setText(movieList.get(position).getTitle());
 
